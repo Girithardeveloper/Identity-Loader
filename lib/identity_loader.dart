@@ -4,6 +4,7 @@ import 'package:identyloader/spin_dual.dart';
 import 'package:identyloader/spin_fade_circle.dart';
 import 'circle_bounce.dart';
 
+/// Enum for LoaderTypes
 enum LoaderType {
   spinCircle,
   spinFadeCircle,
@@ -12,33 +13,26 @@ enum LoaderType {
   circleBounce,
 }
 
+/// Identity Loader
 class IdentityLoader extends StatelessWidget {
-  final double height;
-  final double width;
   final Color? indicatorColor;
   final double indicatorStrokeWidth;
-  final Color? circleAvatarColorOne;
-  final Color? circleAvatarColorTwo;
-  final double circleAvatarRadiusOne;
-  final double circleAvatarRadiusTwo;
-  final Widget loaderImageUrl;
+  final Color? circleAvatarColor;
+  final double circleAvatarRadius;
+  final Widget loaderImageWidget;
   final double loaderImageHeight;
   final double loaderImageWidth;
   final LoaderType loaderType;
 
   const IdentityLoader({
     super.key,
-    this.height = 80,
-    this.width = 80,
     this.indicatorColor,
     this.indicatorStrokeWidth = 6.0,
-    this.circleAvatarColorOne,
-    this.circleAvatarColorTwo,
-    this.circleAvatarRadiusOne = 35,
-    this.circleAvatarRadiusTwo = 28,
+    this.circleAvatarColor,
+    this.circleAvatarRadius = 28,
     this.loaderImageHeight = 40,
     this.loaderImageWidth =40,
-    required this.loaderImageUrl,
+    required this.loaderImageWidget,
     this.loaderType = LoaderType.circularIndicator,
 
   });
@@ -56,23 +50,23 @@ class IdentityLoader extends StatelessWidget {
             /// Circular Progress Indicator / SpinCircle at the edge
             SizedBox(
               height: (loaderType == LoaderType.spinCircle || loaderType == LoaderType.spinFadeCircle)
-                  ? (circleAvatarRadiusTwo + indicatorStrokeWidth) * 4
-                  : (circleAvatarRadiusTwo + indicatorStrokeWidth) * 2,
+                  ? (circleAvatarRadius + indicatorStrokeWidth) * 4
+                  : (circleAvatarRadius + indicatorStrokeWidth) * 2,
               width: (loaderType == LoaderType.spinCircle || loaderType == LoaderType.spinFadeCircle)
-                  ? (circleAvatarRadiusTwo + indicatorStrokeWidth) * 4
-                  : (circleAvatarRadiusTwo + indicatorStrokeWidth) * 2,
+                  ? (circleAvatarRadius + indicatorStrokeWidth) * 4
+                  : (circleAvatarRadius + indicatorStrokeWidth) * 2,
               child: Builder(
                 builder: (context) {
                   switch (loaderType) {
                     case LoaderType.spinCircle:
                       return SpinCircle(
                         color: defaultPrimary,
-                        size: (circleAvatarRadiusTwo + indicatorStrokeWidth) * 3.5,
+                        size: (circleAvatarRadius + indicatorStrokeWidth) * 3.5,
                       );
                     case LoaderType.spinFadeCircle:
                       return SpinFadeCircle(
                         color: defaultPrimary,
-                        size: (circleAvatarRadiusTwo + indicatorStrokeWidth) * 3.5,
+                        size: (circleAvatarRadius + indicatorStrokeWidth) * 3.5,
                       );
                     case LoaderType.circularIndicator:
                       return CircularProgressIndicator(
@@ -83,12 +77,12 @@ class IdentityLoader extends StatelessWidget {
                     case LoaderType.dualWave:
                       return SpinDualRing(
                         color: defaultPrimary,
-                        size: (circleAvatarRadiusTwo + indicatorStrokeWidth) * 3.5,
+                        size: (circleAvatarRadius + indicatorStrokeWidth) * 3.5,
                       );
                     case LoaderType.circleBounce:
                       return CircleBounce(
                         color: defaultPrimary,
-                        size: (circleAvatarRadiusTwo + indicatorStrokeWidth) * 3.8,
+                        size: (circleAvatarRadius + indicatorStrokeWidth) * 3.8,
                       );
                   }
                 },
@@ -100,11 +94,11 @@ class IdentityLoader extends StatelessWidget {
             /// Circle Avatar in the center
             CircleAvatar(
               backgroundColor: defaultPrimary,
-              radius: circleAvatarRadiusTwo,
+              radius: circleAvatarRadius,
               child: SizedBox(
                 height: loaderImageHeight,
                 width: loaderImageWidth,
-                child: loaderImageUrl,
+                child: loaderImageWidget,
               ),
             ),
           ],

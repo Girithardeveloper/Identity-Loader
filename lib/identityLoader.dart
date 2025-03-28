@@ -1,63 +1,71 @@
 import 'package:flutter/material.dart';
+import 'package:identyloader/spin_circle.dart';
 
 class IdentityLoader extends StatelessWidget {
   final double height;
   final double width;
-  final Color indicatorColor;
+  final Color? indicatorColor;
+  final bool isSpinCircle;
   final double indicatorStrokeWidth;
-  final Color circleAvatarColorOne;
-  final Color circleAvatarColorTwo;
+  final Color? circleAvatarColorOne;
+  final Color? circleAvatarColorTwo;
   final double circleAvatarRadiusOne;
   final double circleAvatarRadiusTwo;
-  final  Widget loaderImageUrl;
+  final Widget loaderImageUrl;
   final double loaderImageHeight;
   final double loaderImageWidth;
 
   const IdentityLoader({
     super.key,
     this.height = 80,
-    this.width = 120,
-    this.indicatorColor = Colors.purple,
+    this.width = 80,
+    this.indicatorColor,
     this.indicatorStrokeWidth = 6.0,
-    this.circleAvatarColorOne = Colors.white,
-    this.circleAvatarColorTwo = Colors.purpleAccent,
+    this.circleAvatarColorOne,
+    this.circleAvatarColorTwo,
     this.circleAvatarRadiusOne = 35,
     this.circleAvatarRadiusTwo = 28,
     this.loaderImageHeight = 40,
     this.loaderImageWidth =40,
     required this.loaderImageUrl,
+    this.isSpinCircle = false,
   });
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final Color defaultPrimary = theme.primaryColor;
+
     return Scaffold(
       body: Center(
         child: Stack(
           alignment: Alignment.center,
           children: [
-
-            /// Use SizedBox to control the overall size of the CircularProgressIndicator
+            /// Circular Progress Indicator / SpinCircle at the edge
             SizedBox(
-              height: height, // Set the desired height
-              width: width, // Set the desired width
-              child: CircularProgressIndicator(
-                color: indicatorColor,
-                strokeWidth: indicatorStrokeWidth, // Adjust the thickness of the indicator
+              height: isSpinCircle ? (circleAvatarRadiusTwo + indicatorStrokeWidth) * 4 :
+              (circleAvatarRadiusTwo + indicatorStrokeWidth) * 2,
+              width: isSpinCircle ? (circleAvatarRadiusTwo + indicatorStrokeWidth) * 4 :
+              (circleAvatarRadiusTwo + indicatorStrokeWidth) * 2,
+              child: isSpinCircle
+                  ? SpinCircle(
+                color: defaultPrimary,
+                size: (circleAvatarRadiusTwo + indicatorStrokeWidth) * 3.5,
+              )
+                  : CircularProgressIndicator(
+                color: defaultPrimary,
+                strokeWidth: indicatorStrokeWidth,
               ),
             ),
 
-            /// Increase the size of the asset image
+            /// Circle Avatar in the center
             CircleAvatar(
-              radius: circleAvatarRadiusOne,
-              backgroundColor: circleAvatarColorOne,
-              child: CircleAvatar(
-                  backgroundColor: circleAvatarColorTwo,
-                  radius: circleAvatarRadiusTwo,
-                  child: SizedBox(
-                    height: loaderImageHeight,
-                    width: loaderImageWidth,
-                    child: loaderImageUrl,
-                  )
+              backgroundColor: defaultPrimary,
+              radius: circleAvatarRadiusTwo,
+              child: SizedBox(
+                height: loaderImageHeight,
+                width: loaderImageWidth,
+                child: loaderImageUrl,
               ),
             ),
           ],

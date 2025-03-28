@@ -68,6 +68,7 @@ class _CircleBounceState extends State<CircleBounce> with SingleTickerProviderSt
     );
   }
 
+
   Widget _itemBuilder(int index) => widget.itemBuilder != null
       ? widget.itemBuilder!(context, index)
       : DecoratedBox(

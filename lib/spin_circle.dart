@@ -1,6 +1,11 @@
 import 'dart:math' as math;
 
 import 'package:flutter/cupertino.dart';
+enum LoaderType {
+  spinCircle,
+  spinFadeCircle,
+  circularIndicator,
+}
 
 class SpinCircle extends StatefulWidget {
   const SpinCircle({

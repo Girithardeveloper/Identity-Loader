@@ -6,6 +6,7 @@ import 'circle_bounce.dart';
 
 /// Enum for LoaderTypes
 enum LoaderType {
+
   spinCircle,
   spinFadeCircle,
   circularIndicator,

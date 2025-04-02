@@ -1,6 +1,6 @@
 name: identity_loader
 description: "loader with customizable animations & avatar."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Girithardeveloper/Identity-Loader
 
 environment:

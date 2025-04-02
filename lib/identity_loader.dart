@@ -4,7 +4,7 @@ import 'package:identyloader/spin_dual.dart';
 import 'package:identyloader/spin_fade_circle.dart';
 import 'circle_bounce.dart';
 
-/// Enum for LoaderTypes
+/// Enum for different types of loaders
 enum LoaderType {
 
   spinCircle,
@@ -14,17 +14,33 @@ enum LoaderType {
   circleBounce,
 }
 
-/// Identity Loader
+/// Identity Loader - A customizable loading widget with an avatar in the center
 class IdentityLoader extends StatelessWidget {
+  /// Color of the loading indicator
   final Color? indicatorColor;
+
+  /// Stroke width of the loading indicator (for CircularProgressIndicator)
   final double indicatorStrokeWidth;
+
+  /// Background color of the central CircleAvatar
   final Color? circleAvatarColor;
+
+  /// Radius of the CircleAvatar in the center
   final double circleAvatarRadius;
+
+  /// Widget to be displayed inside the CircleAvatar (e.g., an image or an icon)
   final Widget loaderImageWidget;
+
+  /// Height of the image/icon inside the CircleAvatar
   final double loaderImageHeight;
+
+  /// Width of the image/icon inside the CircleAvatar
   final double loaderImageWidth;
+
+  /// Type of the loader animation
   final LoaderType loaderType;
 
+  /// Constructor for IdentityLoader
   const IdentityLoader({
     super.key,
     this.indicatorColor,
@@ -32,10 +48,9 @@ class IdentityLoader extends StatelessWidget {
     this.circleAvatarColor,
     this.circleAvatarRadius = 28,
     this.loaderImageHeight = 40,
-    this.loaderImageWidth =40,
+    this.loaderImageWidth = 40,
     required this.loaderImageWidget,
     this.loaderType = LoaderType.circularIndicator,
-
   });
 
   @override
@@ -48,7 +63,7 @@ class IdentityLoader extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            /// Circular Progress Indicator / SpinCircle at the edge
+            /// Loader animation based on the selected loader type
             SizedBox(
               height: (loaderType == LoaderType.spinCircle || loaderType == LoaderType.spinFadeCircle)
                   ? (circleAvatarRadius + indicatorStrokeWidth) * 4
@@ -73,7 +88,6 @@ class IdentityLoader extends StatelessWidget {
                       return CircularProgressIndicator(
                         color: defaultPrimary,
                         strokeWidth: indicatorStrokeWidth,
-
                       );
                     case LoaderType.dualWave:
                       return SpinDualRing(
@@ -90,9 +104,7 @@ class IdentityLoader extends StatelessWidget {
               ),
             ),
 
-
-
-            /// Circle Avatar in the center
+            /// Central CircleAvatar containing the image/icon
             CircleAvatar(
               backgroundColor: defaultPrimary,
               radius: circleAvatarRadius,
@@ -107,5 +119,4 @@ class IdentityLoader extends StatelessWidget {
       ),
     );
   }
-
 }

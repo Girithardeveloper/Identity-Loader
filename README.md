@@ -66,10 +66,8 @@ loaderType: LoaderType.spinCircle,
 | loaderType  |   LoaderType | circularIndicator              | Type of loading animation  |
 
 ## Example
-<video width="600" controls>
-  <source src="https://www.youtube.com/watch?v=s20GxxYUhfA&ab_channel=WunderbarFilms" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the demo video](https://youtube.com/shorts/ZSozPgIKRUQ?si=kwwMBFpSYrSslwHG)
+
 
 
 

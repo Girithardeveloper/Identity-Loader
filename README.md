@@ -67,8 +67,16 @@ loaderType: LoaderType.spinCircle,
 
 ## Example
 
-<img alt="example" height="1920" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" title="CircleIndicator" width="822"/>
-Circle Avatar
+<p align="center">
+  <img alt="example" height="600" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" title="CircleIndicator" width="400"/>
+  <img alt="example" height="600" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" title="CircleIndicator" width="400"/>
+</p>
+
+<p align="center">
+  <b>Circle Avatar</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Circle Avatar</b>
+</p>
+
 
 
 

@@ -66,8 +66,8 @@ loaderType: LoaderType.spinCircle,
 | loaderType  |   LoaderType | circularIndicator              | Type of loading animation  |
 
 ## Example
+<img height="400" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" width="400"/>
 
-    <img src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" alt="GIRITHAR" width="100" height="100">
 
 
 

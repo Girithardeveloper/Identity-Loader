@@ -54,16 +54,16 @@ loaderType: LoaderType.spinCircle,
 
 ## Parameters
 
-|Parameter   | Type   | Default  |Description   |
-|---|--------|----------|---|
-| indicatorColor  | Color? | null     | Color of the loading indicator  |
-|  indicatorStrokeWidth | double | 6.0      | Stroke width of the indicator  |
-| circleAvatarColor  | Color? | null     |Background color of the center avatar   |
-|circleAvatarRadius   | double | 28       | Radius of the center avatar  |
-| loaderImageWidget  |  Widget | required |Widget displayed at the center of the loader   |
-|  loaderImageHeight | double | 40       | Height of the loader image  |
-| loaderImageWidth  |    double | 40       | Width of the loader imag  |
-| loaderType  |   LoaderType |  circularIndicator  | Type of loading animation  |
+|Parameter   | Type   | Default                        |Description   |
+|---|--------|--------------------------------|---|
+| indicatorColor  | Color? | Theme.of(context).primarycolor | Color of the loading indicator  |
+|  indicatorStrokeWidth | double | 6.0                            | Stroke width of the indicator  |
+| circleAvatarColor  | Color? | Theme.of(context).primarycolor                           |Background color of the center avatar   |
+|circleAvatarRadius   | double | 28                             | Radius of the center avatar  |
+| loaderImageWidget  |  Widget | required                       |Widget displayed at the center of the loader   |
+|  loaderImageHeight | double | 40                             | Height of the loader image  |
+| loaderImageWidth  |    double | 40                             | Width of the loader imag  |
+| loaderType  |   LoaderType | circularIndicator              | Type of loading animation  |
 
 
 
@@ -82,7 +82,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to open an issue or a pull request.
 
-## Author
+## Authors
 
 <a href="https://github.com/Girithardeveloper/Identity-Loader">
     <img src="https://i.imghippo.com/files/mhE6205AIs.jpg" alt="GIRITHAR" width="100" height="100">

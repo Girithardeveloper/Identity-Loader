@@ -1,39 +1,111 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Identity Loader: Identity Loader is a customizable Flutter package that provides a variety of loading animations along with an identity image or avatar in the center. It helps improve the user experience by offering visually appealing loading indicators.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Multiple loader animations:
+Spin Circle
+Spin Fade Circle
+Circular Progress Indicator
+Dual Wave
+Circle Bounce
+Customizable colors, sizes, and stroke widths.
+Supports an image or widget at the center of the loader.
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Installation
+
+Add the following to your pubspec.yaml file:
+dependencies:
+identity_loader: latest_version
+Then, run:
+flutter pub get
+
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package:
+import 'package:identity_loader/identity_loader.dart';
+Use IdentityLoader in your widget tree:
+IdentityLoader(
+indicatorColor: Colors.blue,
+indicatorStrokeWidth: 6.0,
+circleAvatarColor: Colors.white,
+circleAvatarRadius: 28,
+loaderImageWidget: Image.asset('assets/logo.png'),
+loaderType: LoaderType.spinCircle,
+)
 
-```dart
-const like = 'sample';
-```
 
-## Additional information
+## Parameters
+Parameter
+Type
+Default
+Description
+indicatorColor
+Color?
+null
+Color of the loading indicator
+indicatorStrokeWidth
+double
+6.0
+Stroke width of the indicator
+circleAvatarColor
+Color?
+null
+Background color of the center avatar
+circleAvatarRadius
+double
+28
+Radius of the center avatar
+loaderImageWidget
+Widget
+required
+Widget displayed at the center of the loader
+loaderImageHeight
+double
+40
+Height of the loader image
+loaderImageWidth
+double
+40
+Width of the loader image
+loaderType
+LoaderType
+circularIndicator
+Type of loading animation
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+## Available Loader Types
+LoaderType.spinCircle
+LoaderType.spinFadeCircle
+LoaderType.circularIndicator
+LoaderType.dualWave
+LoaderType.circleBounce
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributions
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or a pull request.
+
+## Author
+Girithar
+Johnson
+
+
+
+[//]: # (## Additional information)
+
+[//]: # ()
+[//]: # (TODO: Tell users more about the package: where to find more information, how to)
+
+[//]: # (contribute to the package, how to file issues, what response they can expect)
+
+[//]: # (from the package authors, and more.)
+
+
+
+
+

@@ -5,14 +5,14 @@ Identity Loader is a customizable Flutter package that provides a variety of loa
 
 ## Features
 
-Multiple loader animations:
-Spin Circle
-Spin Fade Circle
-Circular Progress Indicator
-Dual Wave
-Circle Bounce
-Customizable colors, sizes, and stroke widths.
-Supports an image or widget at the center of the loader.
+* Multiple loader animations:
+* Spin Circle
+* Spin Fade Circle
+* Circular Progress Indicator
+* Dual Wave
+* Circle Bounce
+* Customizable colors, sizes, and stroke widths.
+* Supports an image or widget at the center of the loader.
 
 
 ## Installation

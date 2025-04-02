@@ -68,8 +68,8 @@ loaderType: LoaderType.spinCircle,
 ## Example
 
 <p align="center">
-  <img alt="example" height="600" src="https://media-hosting.imagekit.io/61b6d57a578f445e/spinCircleFade.gif?Expires=1838193712&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=toYyhCC17lrUdVIpx~kyBQFMRcblaOVJuBqptXG4-J2EtcsoHN4Oy2FsHt1YzB~hBpAm1BYsdwdz2JSfehqTZQD52lDcpmopxmawL16qQyviHJUJrFi5AaS1ISo8EcUn3Cxo6NjFSRb~SilllIRcJRXEFy9MU4L9MPsNMy~wf6Xp5gN1XTfmrbilm7fDzKdNxVkJPewqbYKezxpOlficeD6PJ4DxQw8SEw9ZQwphHnZk4pm8akZW-9Kc0Pe6-p8ZYx0dKzlqs9uOY8lzFFnLcjNQEfWlSYakTRI5xcowx4HfIY6jfHAjBo7SIgrVQKopQufPGyz759RrYL1M1dJvJw__" title="CircleIndicator" width="400"/>
-  <img alt="example" height="600" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" title="CircleIndicator" width="400"/>
+  <img alt="example" height="400" src="https://media-hosting.imagekit.io/61b6d57a578f445e/spinCircleFade.gif?Expires=1838193712&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=toYyhCC17lrUdVIpx~kyBQFMRcblaOVJuBqptXG4-J2EtcsoHN4Oy2FsHt1YzB~hBpAm1BYsdwdz2JSfehqTZQD52lDcpmopxmawL16qQyviHJUJrFi5AaS1ISo8EcUn3Cxo6NjFSRb~SilllIRcJRXEFy9MU4L9MPsNMy~wf6Xp5gN1XTfmrbilm7fDzKdNxVkJPewqbYKezxpOlficeD6PJ4DxQw8SEw9ZQwphHnZk4pm8akZW-9Kc0Pe6-p8ZYx0dKzlqs9uOY8lzFFnLcjNQEfWlSYakTRI5xcowx4HfIY6jfHAjBo7SIgrVQKopQufPGyz759RrYL1M1dJvJw__" title="CircleIndicator" width="400"/>
+  <img alt="example" height="600" src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif" title="CircleIndicator" width="300"/>
 </p>
 
 <p align="center">

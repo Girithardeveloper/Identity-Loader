@@ -67,7 +67,7 @@ loaderType: LoaderType.spinCircle,
 
 ## Example
 
-<p align="center">
+<p align="start">
 
   <img alt="example" height="600" src="https://media-hosting.imagekit.io/61b6d57a578f445e/spinCircleFade.gif?Expires=1838193712&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=toYyhCC17lrUdVIpx~kyBQFMRcblaOVJuBqptXG4-J2EtcsoHN4Oy2FsHt1YzB~hBpAm1BYsdwdz2JSfehqTZQD52lDcpmopxmawL16qQyviHJUJrFi5AaS1ISo8EcUn3Cxo6NjFSRb~SilllIRcJRXEFy9MU4L9MPsNMy~wf6Xp5gN1XTfmrbilm7fDzKdNxVkJPewqbYKezxpOlficeD6PJ4DxQw8SEw9ZQwphHnZk4pm8akZW-9Kc0Pe6-p8ZYx0dKzlqs9uOY8lzFFnLcjNQEfWlSYakTRI5xcowx4HfIY6jfHAjBo7SIgrVQKopQufPGyz759RrYL1M1dJvJw__" title="SpinCircleFade" width="300"/>
 
@@ -82,7 +82,7 @@ loaderType: LoaderType.spinCircle,
 </p>
 
 <p align="center">
-  <b>Circle Avatar</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Circle Avatar</b>;
   <b>Circle Avatar</b>
 </p>
 

@@ -84,7 +84,7 @@ Contributions, issues, and feature requests are welcome! Feel free to open an is
 
 ## Author
 [<img height="100" src="https://i.imghippo.com/files/mhE6205AIs.jpg" title="GIRITHAR" width="100"/>
-](https://github.com/Girithardeveloper/Identity-Loader&#41)
+]('https://github.com/Girithardeveloper/Identity-Loader&#41')
 
 [//]: # ([Girithar]&#40;https://github.com/Girithardeveloper/Identity-Loader&#41;)
 

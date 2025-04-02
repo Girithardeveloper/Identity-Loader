@@ -18,21 +18,30 @@ Supports an image or widget at the center of the loader.
 ## Installation
 
 Add the following to your pubspec.yaml file:
+
 ```dart
 dependencies:
-identity_loader: latest_version;
+identity_loader: latest_version
 ```
 
 
 Then, run:
+
+```dart
 flutter pub get
+```
 
 
 ## Usage
 
 Import the package:
+```dart
 import 'package:identity_loader/identity_loader.dart';
+```
+
 Use IdentityLoader in your widget tree:
+
+```dart
 IdentityLoader(
 indicatorColor: Colors.blue,
 indicatorStrokeWidth: 6.0,
@@ -41,7 +50,7 @@ circleAvatarRadius: 28,
 loaderImageWidget: Image.asset('assets/logo.png'),
 loaderType: LoaderType.spinCircle,
 )
-
+```
 
 ## Parameters
 

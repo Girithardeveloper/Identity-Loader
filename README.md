@@ -19,10 +19,10 @@ Supports an image or widget at the center of the loader.
 
 Add the following to your pubspec.yaml file:
 ```dart
-const like = 'sample';
-```
 dependencies:
-identity_loader: latest_version
+identity_loader: latest_version;
+```
+
 
 Then, run:
 flutter pub get

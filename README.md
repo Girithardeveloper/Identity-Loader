@@ -66,7 +66,7 @@ loaderType: LoaderType.spinCircle,
 | loaderType  |   LoaderType | circularIndicator              | Type of loading animation  |
 
 ## Example
-[Watch the demo video](https://youtube.com/shorts/ZSozPgIKRUQ?si=kwwMBFpSYrSslwHG)
+[https://youtube.com/shorts/ZSozPgIKRUQ?si=kwwMBFpSYrSslwHG](https://youtube.com/shorts/ZSozPgIKRUQ?si=kwwMBFpSYrSslwHG)
 
 
 

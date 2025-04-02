@@ -83,7 +83,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Contributions, issues, and feature requests are welcome! Feel free to open an issue or a pull request.
 
 ## Author
-[![GIRITHAR](https://i.imghippo.com/files/mhE6205AIs.jpg)](https://github.com/Girithardeveloper/Identity-Loader&#41)
+[![GIRITHAR](https://i.imghippo.com/files/mhE6205AIs.jpg)](https://github.com/Girithardeveloper/Identity-Loader)
 
 
 [//]: # ([https://i.imghippo.com/files/mhE6205AIs.jpg]&#40;https://github.com/Girithardeveloper/Identity-Loader&#41;)

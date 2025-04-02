@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:identyloader/spin_circle.dart';
-import 'package:identyloader/spin_dual.dart';
-import 'package:identyloader/spin_fade_circle.dart';
+import 'package:identity_Loader/spin_circle.dart';
+import 'package:identity_Loader/spin_dual.dart';
+import 'package:identity_Loader/spin_fade_circle.dart';
 import 'circle_bounce.dart';
 
 /// Enum for different types of loaders

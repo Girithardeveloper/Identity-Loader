@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:identyloader/spin_circle.dart';
+import 'package:identity_Loader/spin_circle.dart';
 
 class _SpinFadeCircleState extends State<SpinFadeCircle> with SingleTickerProviderStateMixin {
   static const _itemCount = 12;

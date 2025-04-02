@@ -6,11 +6,11 @@ import 'circle_bounce.dart';
 
 /// Enum for different types of loaders
 enum LoaderType {
-  spinCircle,        /// A spinning circular loader
-  spinFadeCircle,    /// A fading spinning circular loader
-  circularIndicator, /// A standard circular progress indicator
-  dualWave,          /// A dual wave animated loader
-  circleBounce,      /// A bouncing circle animation loader
+  spinCircle,
+  spinFadeCircle,
+  circularIndicator,
+  dualWave,
+  circleBounce,
 }
 
 /// Identity Loader - A customizable loading widget with an avatar in the center

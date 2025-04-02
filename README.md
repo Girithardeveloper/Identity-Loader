@@ -82,20 +82,13 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to open an issue or a pull request.
 
-## Author
-[Girithar](https://github.com/Girithardeveloper/Identity-Loader)
-[Johnson](https://github.com/Girithardeveloper/Identity-Loader)
+## Author![](C:\Users\user\Downloads\IMG_20250224_151501.jpg)
+
+[//]: # ([Girithar]&#40;https://github.com/Girithardeveloper/Identity-Loader&#41;)
+
+[//]: # ([Johnson]&#40;https://github.com/Girithardeveloper/Identity-Loader&#41;)
 
 
-
-[//]: # (## Additional information)
-
-[//]: # ()
-[//]: # (TODO: Tell users more about the package: where to find more information, how to)
-
-[//]: # (contribute to the package, how to file issues, what response they can expect)
-
-[//]: # (from the package authors, and more.)
 
 
 

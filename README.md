@@ -65,6 +65,8 @@ loaderType: LoaderType.spinCircle,
 | loaderImageWidth  |    double | 40                             | Width of the loader imag  |
 | loaderType  |   LoaderType | circularIndicator              | Type of loading animation  |
 
+## Example
+
 
 
 

@@ -82,7 +82,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to open an issue or a pull request.
 
-## Author![](C:\Users\user\Downloads\IMG_20250224_151501.jpg)
+## Author
+<img height="100" src="C:\Users\user\Downloads\IMG_20250224_151501.jpg" title="GIRITHAR" width="100"/>
 
 [//]: # ([Girithar]&#40;https://github.com/Girithardeveloper/Identity-Loader&#41;)
 

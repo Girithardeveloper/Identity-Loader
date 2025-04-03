@@ -8,10 +8,11 @@ class CircleBounce extends StatefulWidget {
     this.itemBuilder,
     this.duration = const Duration(milliseconds: 2000),
     this.controller,
-  })  : assert(
-  !(itemBuilder is IndexedWidgetBuilder && color is Color) && !(itemBuilder == null && color == null),
-  'You should specify either a itemBuilder or a color',
-  );
+  }) : assert(
+         !(itemBuilder is IndexedWidgetBuilder && color is Color) &&
+             !(itemBuilder == null && color == null),
+         'You should specify either a itemBuilder or a color',
+       );
 
   final Color? color;
   final double size;
@@ -23,7 +24,8 @@ class CircleBounce extends StatefulWidget {
   State<CircleBounce> createState() => _CircleBounceState();
 }
 
-class _CircleBounceState extends State<CircleBounce> with SingleTickerProviderStateMixin {
+class _CircleBounceState extends State<CircleBounce>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -31,16 +33,19 @@ class _CircleBounceState extends State<CircleBounce> with SingleTickerProviderSt
   void initState() {
     super.initState();
 
-    _controller = (widget.controller ?? AnimationController(vsync: this, duration: widget.duration))
-      ..addListener(() {
-        if (mounted) {
-          setState(() {});
-        }
-      })
-      ..repeat(reverse: true);
-    _animation = Tween(begin: -1.0, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
-    );
+    _controller =
+        (widget.controller ??
+              AnimationController(vsync: this, duration: widget.duration))
+          ..addListener(() {
+            if (mounted) {
+              setState(() {});
+            }
+          })
+          ..repeat(reverse: true);
+    _animation = Tween(
+      begin: -1.0,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   }
 
   @override
@@ -68,12 +73,13 @@ class _CircleBounceState extends State<CircleBounce> with SingleTickerProviderSt
     );
   }
 
-
-  Widget _itemBuilder(int index) => widget.itemBuilder != null
-      ? widget.itemBuilder!(context, index)
-      : DecoratedBox(
-    decoration: BoxDecoration(
-      shape: BoxShape.circle,
-      color: widget.color!.withAlpha((0.6 * 255).toInt())),
-  );
+  Widget _itemBuilder(int index) =>
+      widget.itemBuilder != null
+          ? widget.itemBuilder!(context, index)
+          : DecoratedBox(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: widget.color!.withOpacity(0.6),
+            ),
+          );
 }

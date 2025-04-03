@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:identity_loader/spin_circle.dart';
 import 'package:identity_loader/spin_dual.dart';
 import 'package:identity_loader/spin_fade_circle.dart';
-
 import 'circle_bounce.dart';
 
 /// Enum for different types of loaders
 enum LoaderType {
-
   spinCircle,
   spinFadeCircle,
   circularIndicator,
@@ -57,7 +55,8 @@ class IdentityLoader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final Color defaultPrimary = theme.primaryColor;
+    /// Applying the indicator color as the default color if not the primaryColor will be applied
+    final Color defaultPrimary = indicatorColor ?? theme.primaryColor;
 
     return Scaffold(
       body: Center(
@@ -66,12 +65,16 @@ class IdentityLoader extends StatelessWidget {
           children: [
             /// Loader animation based on the selected loader type
             SizedBox(
-              height: (loaderType == LoaderType.spinCircle || loaderType == LoaderType.spinFadeCircle)
-                  ? (circleAvatarRadius + indicatorStrokeWidth) * 4
-                  : (circleAvatarRadius + indicatorStrokeWidth) * 2,
-              width: (loaderType == LoaderType.spinCircle || loaderType == LoaderType.spinFadeCircle)
-                  ? (circleAvatarRadius + indicatorStrokeWidth) * 4
-                  : (circleAvatarRadius + indicatorStrokeWidth) * 2,
+              height:
+                  (loaderType == LoaderType.spinCircle ||
+                          loaderType == LoaderType.spinFadeCircle)
+                      ? (circleAvatarRadius + indicatorStrokeWidth) * 4
+                      : (circleAvatarRadius + indicatorStrokeWidth) * 2,
+              width:
+                  (loaderType == LoaderType.spinCircle ||
+                          loaderType == LoaderType.spinFadeCircle)
+                      ? (circleAvatarRadius + indicatorStrokeWidth) * 4
+                      : (circleAvatarRadius + indicatorStrokeWidth) * 2,
               child: Builder(
                 builder: (context) {
                   switch (loaderType) {

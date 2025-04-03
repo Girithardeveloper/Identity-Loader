@@ -21,7 +21,8 @@ class SpinDualRing extends StatefulWidget {
   State<SpinDualRing> createState() => _SpinDualRingState();
 }
 
-class _SpinDualRingState extends State<SpinDualRing> with SingleTickerProviderStateMixin {
+class _SpinDualRingState extends State<SpinDualRing>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -29,13 +30,15 @@ class _SpinDualRingState extends State<SpinDualRing> with SingleTickerProviderSt
   void initState() {
     super.initState();
 
-    _controller = (widget.controller ?? AnimationController(vsync: this, duration: widget.duration))
-      ..addListener(() {
-        if (mounted) {
-          setState(() {});
-        }
-      })
-      ..repeat();
+    _controller =
+        (widget.controller ??
+              AnimationController(vsync: this, duration: widget.duration))
+          ..addListener(() {
+            if (mounted) {
+              setState(() {});
+            }
+          })
+          ..repeat();
     _animation = Tween(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: _controller,
@@ -56,7 +59,8 @@ class _SpinDualRingState extends State<SpinDualRing> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Center(
       child: Transform(
-        transform: Matrix4.identity()..rotateZ((_animation.value) * math.pi * 2),
+        transform:
+            Matrix4.identity()..rotateZ((_animation.value) * math.pi * 2),
         alignment: FractionalOffset.center,
         child: CustomPaint(
           painter: _DualRingPainter(
@@ -76,10 +80,11 @@ class _DualRingPainter extends CustomPainter {
     required this.angle,
     required double paintWidth,
     required Color color,
-  }) : ringPaint = Paint()
-    ..color = color
-    ..strokeWidth = paintWidth
-    ..style = PaintingStyle.stroke;
+  }) : ringPaint =
+           Paint()
+             ..color = color
+             ..strokeWidth = paintWidth
+             ..style = PaintingStyle.stroke;
 
   final Paint ringPaint;
   final double angle;

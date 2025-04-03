@@ -1,7 +1,7 @@
 
 
 ## Identity Loader: 
-Identity Loader is a customizable Flutter package that provides a variety of loading animations along with an identity image or avatar in the center. It helps improve the user experience by offering visually appealing loading indicators.
+loader with customizable animations & avatar.
 
 ## Features
 

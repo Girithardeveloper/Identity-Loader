@@ -74,7 +74,6 @@ class _CircleBounceState extends State<CircleBounce> with SingleTickerProviderSt
       : DecoratedBox(
     decoration: BoxDecoration(
       shape: BoxShape.circle,
-      color: widget.color!.withOpacity(0.6),
-    ),
+      color: widget.color!.withAlpha((0.6 * 255).toInt())),
   );
 }

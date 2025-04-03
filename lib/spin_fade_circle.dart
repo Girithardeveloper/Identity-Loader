@@ -9,7 +9,6 @@ class _SpinFadeCircleState extends State<SpinFadeCircle> with SingleTickerProvid
   @override
   void initState() {
     super.initState();
-
     _controller = (widget.controller ?? AnimationController(vsync: this, duration: widget.duration))..repeat();
   }
 

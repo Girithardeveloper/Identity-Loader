@@ -37,6 +37,7 @@ class MyHomePage extends StatelessWidget {
   /// spinCircle
   Widget spinCircle() {
     return  IdentityLoader(
+
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,

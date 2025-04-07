@@ -37,12 +37,11 @@ class MyHomePage extends StatelessWidget {
   /// spinCircle
   Widget spinCircle() {
     return  IdentityLoader(
-
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
       circleAvatarRadius: 28,
-      loaderImageWidget: Image.asset('asset/rider_images(2).png'),
+      loaderImageWidget: Image.asset('asset/rider_image(2).png'),
       loaderType: LoaderType.spinCircle,
     );
   }
@@ -54,7 +53,7 @@ class MyHomePage extends StatelessWidget {
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
       circleAvatarRadius: 28,
-      loaderImageWidget: Image.asset('asset/rider_images(2).png'),
+      loaderImageWidget: Image.asset('asset/rider_image(2).png'),
       loaderType: LoaderType.spinFadeCircle,
     );
   }
@@ -66,7 +65,7 @@ class MyHomePage extends StatelessWidget {
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
       circleAvatarRadius: 28,
-      loaderImageWidget: Image.asset('asset/rider_images(2).png'),
+      loaderImageWidget: Image.asset('asset/rider_image(2).png'),
       loaderType: LoaderType.circularIndicator,
     );
   }
@@ -78,7 +77,7 @@ class MyHomePage extends StatelessWidget {
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
       circleAvatarRadius: 28,
-      loaderImageWidget: Image.asset('asset/rider_images(2).png'),
+      loaderImageWidget: Image.asset('asset/rider_image(2).png'),
       loaderType: LoaderType.dualWave,
     );
   }
@@ -90,7 +89,7 @@ class MyHomePage extends StatelessWidget {
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
       circleAvatarRadius: 28,
-      loaderImageWidget: Image.asset('asset/rider_images(2).png'),
+      loaderImageWidget: Image.asset('asset/rider_image(2).png'),
       loaderType: LoaderType.circleBounce,
     );
   }

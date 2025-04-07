@@ -55,6 +55,7 @@ class IdentityLoader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
     /// Applying the indicator color as the default color if not the primaryColor will be applied
     final Color defaultPrimary = indicatorColor ?? theme.primaryColor;
 

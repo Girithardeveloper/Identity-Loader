@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:identity_loader/spin_circle.dart';
 
-class _SpinFadeCircleState extends State<SpinFadeCircle> with SingleTickerProviderStateMixin {
+class _SpinFadeCircleState extends State<SpinFadeCircle>
+    with SingleTickerProviderStateMixin {
   static const _itemCount = 12;
 
   late AnimationController _controller;
@@ -10,7 +11,10 @@ class _SpinFadeCircleState extends State<SpinFadeCircle> with SingleTickerProvid
   void initState() {
     super.initState();
 
-    _controller = (widget.controller ?? AnimationController(vsync: this, duration: widget.duration))..repeat();
+    _controller =
+        (widget.controller ??
+              AnimationController(vsync: this, duration: widget.duration))
+          ..repeat();
   }
 
   @override
@@ -56,15 +60,17 @@ class _SpinFadeCircleState extends State<SpinFadeCircle> with SingleTickerProvid
     );
   }
 
-  Widget _itemBuilder(int index) => widget.itemBuilder != null
-      ? widget.itemBuilder!(context, index)
-      : DecoratedBox(
-    decoration: BoxDecoration(
-      color: widget.color,
-      shape: BoxShape.circle,
-    ),
-  );
+  Widget _itemBuilder(int index) =>
+      widget.itemBuilder != null
+          ? widget.itemBuilder!(context, index)
+          : DecoratedBox(
+            decoration: BoxDecoration(
+              color: widget.color,
+              shape: BoxShape.circle,
+            ),
+          );
 }
+
 class SpinFadeCircle extends StatefulWidget {
   const SpinFadeCircle({
     super.key,
@@ -73,10 +79,11 @@ class SpinFadeCircle extends StatefulWidget {
     this.itemBuilder,
     this.duration = const Duration(milliseconds: 1200),
     this.controller,
-  })  : assert(
-  !(itemBuilder is IndexedWidgetBuilder && color is Color) && !(itemBuilder == null && color == null),
-  'You should specify either a itemBuilder or a color',
-  );
+  }) : assert(
+         !(itemBuilder is IndexedWidgetBuilder && color is Color) &&
+             !(itemBuilder == null && color == null),
+         'You should specify either a itemBuilder or a color',
+       );
 
   final Color? color;
   final double size;

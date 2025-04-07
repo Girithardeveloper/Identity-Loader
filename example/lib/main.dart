@@ -21,22 +21,18 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: spinCircle()
-      ),
-    );
+    return Scaffold(body: Center(child: spinCircle()));
   }
-
 
   /// spinCircle
   Widget spinCircle() {
-    return  IdentityLoader(
+    return IdentityLoader(
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
@@ -48,7 +44,7 @@ class MyHomePage extends StatelessWidget {
 
   /// spinFadeCircle
   Widget spinFadeCircle() {
-    return  IdentityLoader(
+    return IdentityLoader(
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
@@ -60,7 +56,7 @@ class MyHomePage extends StatelessWidget {
 
   /// circularIndicator
   Widget circularIndicator() {
-    return  IdentityLoader(
+    return IdentityLoader(
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
@@ -72,7 +68,7 @@ class MyHomePage extends StatelessWidget {
 
   /// dualWave
   Widget dualWave() {
-    return  IdentityLoader(
+    return IdentityLoader(
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
@@ -84,7 +80,7 @@ class MyHomePage extends StatelessWidget {
 
   /// circleBounce
   Widget circleBounce() {
-    return  IdentityLoader(
+    return IdentityLoader(
       indicatorColor: Colors.blue,
       indicatorStrokeWidth: 6.0,
       circleAvatarColor: Colors.white,
@@ -93,5 +89,4 @@ class MyHomePage extends StatelessWidget {
       loaderType: LoaderType.circleBounce,
     );
   }
-
 }

@@ -1,6 +1,6 @@
 name: identity_loader
-description: "loader with customizable animations & avatar."
-version: 0.0.4
+description: "A versatile loader widget that supports customizable animations and user avatars, allowing for a personalized and engaging loading experience in your app."
+version: 0.0.5
 homepage: https://github.com/Girithardeveloper/Identity-Loader
 
 environment:

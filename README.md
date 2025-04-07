@@ -1,7 +1,7 @@
 
 
 ## Identity Loader: 
-loader with customizable animations & avatar.
+A versatile loader widget that supports customizable animations and user avatars, allowing for a personalized and engaging loading experience in your app..
 
 ## Features
 

@@ -58,6 +58,9 @@ class IdentityLoader extends StatelessWidget {
     /// Applying the indicator color as the default color if not the primaryColor will be applied
     final Color defaultPrimary = indicatorColor ?? theme.primaryColor;
 
+    /// If the circularAvatar color is provided (not null) , use it ; otherwise, fall back to the theme's primary color
+    final Color circularAvatarColor = circleAvatarColor ?? theme.primaryColor;
+
     return Scaffold(
       body: Center(
         child: Stack(
@@ -110,7 +113,7 @@ class IdentityLoader extends StatelessWidget {
 
             /// Central CircleAvatar containing the image/icon
             CircleAvatar(
-              backgroundColor: defaultPrimary,
+              backgroundColor: circularAvatarColor,
               radius: circleAvatarRadius,
               child: SizedBox(
                 height: loaderImageHeight,

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-
 class CircleBounce extends StatefulWidget {
+
   const CircleBounce({
     super.key,
     this.color,
